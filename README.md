@@ -1,0 +1,2 @@
+# TablasDeMultiplicar
+práctica de JS
