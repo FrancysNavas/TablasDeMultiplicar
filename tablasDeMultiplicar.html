@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas de Multiplicar</title>
+  </head>
+  <body>
+
+    
+    <script>
+      for (i = 11; i >= 9; i--) {
+        document.write("<br><b> La Tabla del " + i + " : </b></br>");
+
+        for (j = 1; j < 10; j++) {
+          document.write(i + " x " + j + " : ");
+          document.write(i * j);
+          document.write(" <br>");
+        }
+      }
+
+      function mostarVariasVeces(str){
+        var oracion = str + " es lo mejor!";
+
+        for(var i=0; i < oracion.length; i+=2){
+          console.log(oracion)
+        }
+      }
+      mostarVariasVeces("ES6")
+
+      // Calculadora
+      function sumar(num1, num2){
+        suma = num1 + num2;
+        return suma
+      }
+      function restar(num1, num2){
+        if(num1 >= num2){
+          resta = num1 - num2;
+          return resta;
+        }else{
+          console.log("El número 1 es menor al número 2. Escribe un numero mayor")
+        }
+        return resta
+      }
+      function dividir(num1, num2){
+        if(num1 >= num2){
+          division = num1 / num2;
+          return division;
+        }else{
+          console.log("El número 1 es menor al número 2. Escribe un numero mayor")
+        }
+        return resta
+      }
+      function multiplicacion(num1, num2){
+        multiplicar = num1 * num2
+        return multiplicar
+      }
+      console.log("La suma de num1 y num2 es de: " +sumar(8, 10))
+      console.log("La resta de num1 y num2 es de: "+restar(10, 5))
+      console.log("La división de num1 y num2 es de: "+dividir(10, 5))
+      console.log("La multiplicacion de num1 y num2 es de:  "+multiplicacion(10, 5))
+
+      function saludar(nombre){
+        let nombrePersona = prompt("Hola!...¿Cómo te llamas?");
+        alert("Hola ..."+ nombrePersona)
+        return nombrePersona
+
+      }
+      saludar()
+
+    </script>
+  </body>
+</html>
